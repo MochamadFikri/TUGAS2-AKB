@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_main">#43b3e6</color>
+    <color name="bg_second">#ffffff</color>
+    <color name="bg_invite">#f1f1f2</color>
+    <color name="shadow_header">#d1d2d4</color>
+    <color name="separator">#939597</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="font_title">#404041</color>
+    <color name="font_desc">#808284</color>
+
+</resources>

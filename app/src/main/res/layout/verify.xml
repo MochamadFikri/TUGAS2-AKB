@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="#43b3e6"
+    style="@style/AppTheme"
+    tools:context=".Verify">
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/txt_almost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_verify2"
+            android:textSize="@dimen/dimen30"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/colorWhite"
+            />
+        <TextView
+            android:id="@+id/txt_thank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_verify3"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/colorWhite"
+            />
+
+        <EditText
+            android:id="@+id/edt_register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen10"
+            android:autofillHints="none"
+            android:layout_marginTop="@dimen/dimen40"
+            android:backgroundTint="@color/colorWhite"
+            android:hint="@string/txt_code"
+            android:textSize="@dimen/dimen12"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen20"
+            android:textColorHint="@color/colorWhite" />
+
+        <Button
+            android:layout_marginBottom="@dimen/dimen10"
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/transparent_bg_bordered"
+            android:text="@string/txt_send"
+            android:padding="@dimen/dimen10"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/txt_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_resend"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/colorWhite"
+            />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

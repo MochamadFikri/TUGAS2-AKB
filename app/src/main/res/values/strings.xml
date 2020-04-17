@@ -1,0 +1,52 @@
+<resources>
+    <string name="txt_register">Register</string>
+    <string name="txt_register_caps">REGISTER</string>
+    <string name="fb_icon">fb_icon</string>
+
+    <string name="app_name">Tugas 2 AKB</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone Number</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_repassword">Retype Password</string>
+    <string name="hint_address">Home Address</string>
+    <string name="hint_default">Default Location</string>
+    <string name="hint_agree">Agree with Terms and Condition</string>
+
+
+    <string name="nama"><b>Mochamad Fikri Fadila Akbar</b></string>
+    <string name="type">Blood type : A</string>
+    <string name="satu"><b>70</b></string>
+    <string name="dua"><b>100</b></string>
+    <string name="tiga"><b>330</b></string>
+    <string name="empat"><b>BLOOD GIVE</b></string>
+    <string name="lima"><b>BLOOD RECEIVE</b></string>
+    <string name="enam"><b>THANKS</b></string>
+
+
+    <string name="txt_male">Male</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_personal">Personal</string>
+    <string name="txt_organization">Organization</string>
+
+    <string name="txt_login">LOGIN</string>
+    <string name="txt_verify">VERIFY</string>
+    <string name="txt_connect">CONNECT WITH FACEBOOK</string>
+    <string name="txt_or">OR</string>
+    <string name="txt_does">Doesn\'t Have Account ? <b>Register</b></string>
+
+
+    <string name="txt_almost">Almost There</string>
+    <string name="txt_verify2">Verify Your Account</string>
+    <string name="txt_verify3">We have send verification code to your email</string>
+    <string name="txt_send">Send</string>
+    <string name="txt_resend">Doesn\'t get the code ? <b>Resend</b></string>
+    <string name="txt_code">enter verification code here...</string>
+
+
+    <string name="txt_thank">Thank you for registering with us. One more \nstep, you need to check your email \nto active your account</string>
+
+
+
+
+</resources>

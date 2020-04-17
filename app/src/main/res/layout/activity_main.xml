@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="#43b3e6"
+    style="@style/AppTheme"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/img_main_logo"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="@dimen/dimen50"
+            android:layout_width="@dimen/dimen120"
+            android:layout_height="@dimen/dimen120"
+            android:src="@drawable/ic_welcome_logo"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dimen10"
+            />
+        <EditText
+            android:id="@+id/edt_main_username"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_username"
+            android:paddingBottom="@dimen/dimen20"
+            android:textColorHint="@color/colorWhite"
+            android:layout_marginBottom="@dimen/dimen10"
+            android:backgroundTint="@color/colorWhite"
+            android:autofillHints="none"
+            />
+        <EditText
+            android:id="@+id/edt_main_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:paddingBottom="@dimen/dimen20"
+            android:textColorHint="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:autofillHints="none"
+            />
+        <Button
+            android:layout_marginBottom="@dimen/dimen10"
+            android:layout_marginTop="@dimen/dimen20"
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/transparent_bg_bordered"
+            android:text="@string/txt_login"
+            android:padding="@dimen/dimen10"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/txt_main_or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_or"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/colorWhite"
+            />
+        <LinearLayout
+            android:id="@+id/btn_connect"
+            android:layout_marginBottom="@dimen/dimen10"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dimen10"
+            android:background="@drawable/transparent_bg_bordered"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/dimen30"
+                android:layout_height="@dimen/dimen25"
+                android:contentDescription="@string/fb_icon"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_welcome_fb_login" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen28"
+                android:background="@null"
+                android:text="@string/txt_connect"
+                android:textColor="@color/colorWhite"
+                />
+
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_main_does"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_does"
+                android:gravity="center_horizontal"
+                android:textColorHint="@color/colorWhite"
+                android:layout_marginTop="@dimen/dimen10"
+                />
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen50"
+        app:navigationIcon="@drawable/ic_header_back"
+        android:background="@drawable/ic_header"
+        app:title="@string/txt_register"
+        app:titleTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:layout_marginTop="@dimen/dimen40"
+        tools:layout_editor_absoluteX="123dp">
+
+
+        <EditText
+            android:id="@+id/edt_register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="none"
+            android:backgroundTint="@color/font_desc"
+            android:hint="@string/hint_username"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/font_desc" />
+
+        <EditText
+            android:id="@+id/edt_register_email"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="none"
+            android:backgroundTint="@color/font_desc"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/font_desc" />
+
+        <EditText
+            android:id="@+id/edt_main_phone"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="none"
+            android:backgroundTint="@color/font_desc"
+            android:hint="@string/hint_phone"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/font_desc" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_below"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen20"
+            android:paddingRight="@dimen/dimen20">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/txt_male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txt_female" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spn_goldar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Spinner
+                android:id="@+id/spn_reshus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/register_edt_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:layout_weight="1"
+            android:textColorHint="@color/font_desc"
+            android:backgroundTint="@color/font_desc"
+            />
+        <EditText
+            android:id="@+id/register_edt_repwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_repassword"
+            android:inputType="textPassword"
+            android:textColorHint="@color/font_desc"
+            android:backgroundTint="@color/font_desc"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_group_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_below"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen20"
+            android:paddingRight="@dimen/dimen20">
+
+            <RadioButton
+                android:id="@+id/radio_personal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/txt_personal" />
+
+            <RadioButton
+                android:id="@+id/radio_organization"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txt_organization" />
+        </RadioGroup>
+        <Spinner
+            android:id="@+id/spn_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint_address"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/font_desc"
+            android:backgroundTint="@color/font_desc"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint_default"
+            android:textColorHint="@color/font_desc"
+            android:backgroundTint="@color/font_desc"
+            android:drawableRight="@drawable/ic_blood_needed_location"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_marginBottom="@dimen/dimen10"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint_agree"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen5"
+            android:layout_marginBottom="@dimen/dimen5"
+            android:background="@drawable/transparent_bg_bordered_2"
+            android:padding="@dimen/dimen10"
+            android:text="@string/txt_register_caps"
+            android:textAllCaps="false"
+            android:textColor="@color/bg_main" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
